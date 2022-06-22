@@ -1,6 +1,6 @@
 import pygame
 from game import Game
-
+from obj import Obj
 
 class Main:
 
@@ -22,7 +22,8 @@ class Main:
                 self.loop = False
 
     def draw(self):
-        pass
+        self.game.draw(self.window)
+        self.game.update()
 
     def update(self):
         while self.loop:

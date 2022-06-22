@@ -23,7 +23,7 @@ class Main:
 
     def draw(self):
         self.game.draw(self.window)
-        self.game.update()
+        self.game.updates()
 
     def update(self):
         while self.loop:
